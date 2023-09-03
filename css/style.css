@@ -1,0 +1,163 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+.side-nav{
+    left: -250px ; 
+    z-index: 10;
+} 
+
+.nav-content{
+    background-color: #000;
+    color: #fff;
+    width: 250px;
+}
+.nav-content li{
+    padding: 10px 0 !important;
+    position: relative;
+    cursor: pointer;
+}
+.nav-slider .icon{
+    cursor: pointer;
+}
+figure{
+    cursor: pointer;
+}
+
+figure:hover figcaption{
+
+    top: 0;
+
+}
+
+.form-control{
+    background-color: transparent;
+    color: #fff !important;
+
+}
+.form-control::placeholder{
+    color: #fff;
+}
+
+.form-control:focus{
+    background-color:transparent ;
+
+}
+
+
+.col-md-3 figcaption{
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    transition: top 400ms;
+    font-weight: bolder;
+}
+.spanStyle{
+   
+    background-color: #cff4fc;
+    color: #4a7489;
+    padding: 7px 10px;
+}
+
+.searchScreen{
+    display: none;
+}
+
+.Categories{
+    display: none;
+}
+
+.mealDesc{
+    display: none;
+}
+
+a{
+    text-decoration:none!important;
+    color: #fff;
+}
+.open{
+    cursor: pointer;
+}
+.closeIcon{
+    font-size: 40px;
+}
+
+figcaption .font{
+    font-size: .85rem !important;
+}
+
+.item{
+    cursor: pointer;
+}
+.Arrea{
+    display: none;
+}
+.items{
+    cursor: pointer;
+}
+.Ingredient{
+    display: none;
+}
+.contact{
+    display: none;
+}
+.spanTag{
+    background-color: #f8d7da;
+    color: #af5467;
+    padding: 7px 10px;
+}
+
+
+
+.loader {
+    position: relative;
+    width: 108px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .loader::after , .loader::before  {
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color: #FFF;
+    background-image:  radial-gradient(circle 14px, #0d161b 100%, transparent 0);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    animation: eyeMove 10s infinite , blink 10s infinite;
+  }
+  @keyframes eyeMove {
+    0%  , 10% {     background-position: 0px 0px}
+    13%  , 40% {     background-position: -15px 0px}
+    43%  , 70% {     background-position: 15px 0px}
+    73%  , 90% {     background-position: 0px 15px}
+    93%  , 100% {     background-position: 0px 0px}
+  }
+  @keyframes blink {
+    0%  , 10% , 12% , 20%, 22%, 40%, 42% , 60%, 62%,  70%, 72% , 90%, 92%, 98% , 100%
+    { height: 48px}
+    11% , 21% ,41% , 61% , 71% , 91% , 99%
+    { height: 18px}
+  }
+
+.loadScreen{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 9999 !important ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+:root{
+    overflow: hidden;
+}
